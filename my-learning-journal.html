@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Learning Journal</title>
+        <meta name="viewport" content="width=device-width,initial scale=1.0">
+        <meta name="description" content="Documenting growth,lessons and progress">
+        <link rel="icon" href="Myicon.ico">
+        <link rel="stylesheet" href="my-learning-journal.css">
+        </head>
+    <body>
+        <header>
+           <div class="search-container">
+         <form action="/search" method="get">
+          <label for="site-search" class="visually-hidden">Search the journal:</label>
+         <input type="search" id="site-search" name="q" placeholder="Search my journal...">
+          <button type="submit">Go</button>
+        </form>
+         </div>
+            
+            <h1 id="title">My Learning Journal</h1>
+            
+            <nav>
+              <div class="logo">
+                <img class="logo" src="favicon-32x32.png" alt="logo">
+              </div>
+              <div class="links">
+                <a href="#home">Home</a>
+                
+                <a href="#about-me">About me</a>
+                
+                <a href="#dev-notes">Dev-Notes</a>
+                
+                <a href="#life-lessons">Life lessons</a>
+                
+                <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </header>
+        
+        <section id="home" class="welcome-layout">
+          
+          <section class="welcome">
+            <img class="himage" src="Home.png" alt="About this blog.">
+            <h2>About this Blog</h2>
+            <p>This is a space where I document growth in code and in life.
+            
+            <p>As I transition into frontend development, I share lessons from building projects, debugging challenges, and understanding how the web works. Alongside that, I reflect on mindset, discipline, and the everyday experiences that shape who I’m becoming.</p>
+                
+            <p>This blog isn’t just about learning to code. It’s about learning in all ramifications.</p>
+          </section>
+          
+          <section class="latest-posts">
+            <h2>Latest Posts</h2>
+            
+            <article>
+              <h3>Dev-Notes</h3>
+            <img class="im" src="Fixing-nav.jpg" alt="Fixing My Mobile Navigation Layout">
+            <p class="heading">Fixing My Mobile Navigation Layout</p>
+            <p>When I viewed my site on mobile, the navigation buttons were stacking vertically and taking up too much space. It made the page feel stretched and inefficient.</p>
+            
+            <a href="#dev-notes">continue here</a>
+           </article>
+           
+           <article>
+            <h3>Life-Lessons</h3>
+            <img class="im" src="The-gap.png" alt="The Gap Between Wanting and Doing.">
+            <p class="heading">The Gap Between Wanting and Doing</p>
+            <p>For a long time, I thought “understanding” was the same as “progress.” I read articles about frontend development. I watched tutorials. I saved bookmarks. I felt productive.But nothing was built.</p>
+            <a href="#life-lessons">continue here</a>
+            </article>
+          </section>
+          </section>
+          
+          <section class="together" id="about-me">
+            <h2>About Me</h2>
+            <a href="about-me.html">Get to know me more</a>
+          </section>
+          
+          <section class="together" id="dev-notes">
+            <h2>Dev- Notes</h2>
+            <h3>Fixing My Mobile Navigation Layout</h3>
+            <p>When I viewed my site on mobile, the navigation buttons were stacking vertically and taking up too much space. It made the page feel stretched and inefficient.</p>
+
+            <p>My first attempt was to use `display: flex` with `flex-wrap` to force two buttons per row. In theory it should have worked, but the alignment kept breaking and the layout didn’t behave consistently across screen sizes.</p>
+
+            <p>The solution ended up being simpler. I removed flex on mobile and used `display: inline-block` with `width: 42%`. That forced two buttons per row naturally and reduced the vertical space significantly. Sometimes the cleanest fix isn’t the most complex one, it’s the one that behaves predictably.</p>
+            
+            <a href="#home">Back</a>
+          </section>
+          
+          <section class="together" id="life-lessons">
+          <h2>Life-Lessons</h2>  
+          <h3>The Gap Between Wanting and Doing</h3>
+          
+         <p>For a long time, I thought “understanding” was the same as “progress.” I read articles about frontend development. I watched tutorials. I saved bookmarks. I felt productive.</p>
+
+        <p>But nothing was built.</p>
+
+        <p>The shift happened when I stopped consuming and started typing. My first lines of codes were messy. My layouts broke on mobile. I spent an hour fighting a button that wouldn’t move.</p>
+
+       <p>That frustration? That was the real learning.</p>
+
+       <p>Real fulfillment didn’t come from knowing <span>what</span> a developer does. It came from devising a way to <span>be one</span> - opening the editor, making the mistake, fixing it, and doing it again.
+
+         <p>If you’re waiting until you feel “ready” to start… you’re waiting too long. Start messy. Start small. Just start.</p>
+          <a href="#home">Back</a>
+          </section>
+          
+          <section class="together" id="contact">
+            <h2>Contact</h2>
+            <form>
+              <label for="name">Name: </label>
+              <input type="text" id="name" name="name">
+              <label for="email">Email: </label>
+              <input type="email" id="email" name="email">
+              <label for="collaborator">collaborator</label>
+              <input type="radio" id="collaborator" name="reason" value="collaborator">
+              <label for="visitor">Visitor</label>
+              <input type="radio" id="visitor" name="reason" value="visitor">
+              <label for="message">Leave a message</label>
+              <textarea id="message" name="message" cols="30" rows="4"></textarea>
+            </form>
+          </section>
+          <hr>
+          <footer>
+            <h3>Follow me on:</h3>
+            <p class="follow">💼 <a href="https://www.linkedin.com/in/obasi-lilian-uchechi">LinkedIn</a></p>
+            <p class="follow">💻 <a href="https://github.com/obasililian59-cell">GitHub</a></p>
+            <p class="follow">𝕏   <a href="https://x.com/Obasi4Lilian">X</a></p>
+            
+            <p class="back-link"><a href="https://obasililian59-cell.github.io/Web-development-portfolio/">&larr; Back to portfolio</a></p>
+            <p class="copyright">@Lilian2026</p>
+          </footer>
+    </body>
+</html>
